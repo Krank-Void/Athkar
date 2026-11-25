@@ -1,0 +1,6 @@
+plugins { id 'com.android.application' }
+android { namespace 'com.athkar.lock'; compileSdk 34
+ // signingConfigs removed: add your own keystore (storeFile, storePassword, keyAlias, keyPassword)
+ defaultConfig { applicationId 'com.athkar.lock'; minSdk 23; targetSdk 33; versionCode 14; versionName '2.0.5' }
+ buildTypes { release { minifyEnabled true; shrinkResources true; proguardFiles getDefaultProguardFile('proguard-android-optimize.txt') } }
+}
